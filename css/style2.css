@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f4f4f4;
+    font-size: 16px;
+}
+.body-cadastro{
+    background: url(../images/login.background.png) no-repeat left top;
+    background-size: cover;
+    
+}
+
+.filtro{
+    width: 100%;
+    height: 122.5%;
+    position: absolute;
+    background-color: #081245;
+    opacity: 0.5;
+    z-index: -1;
+}
+#filtro2{
+    width: 100%;
+    height: 90.7%;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    display: flex;
+    box-sizing:border-box;
+    justify-content: space-between;
+    padding: 25px 90px;
+    color: #cecece;
+}
+section{
+    display: flex;
+    justify-content: space-evenly;
+    
+    min-height: 500px;
+}
+header{
+    display: flex;
+    box-sizing:border-box;
+    justify-content: space-around;
+    padding: 25px 90px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+header a{
+    text-decoration: none;
+    color: #000000;
+}
+header h3{
+    padding: 9px;
+    font-weight: 600;
+    background-size: 0 2px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, #000000, #000000);
+    transition: all 0.5s ease;
+    
+}
+header h3:hover{
+    background-size: 100% 2px;
+    cursor: pointer;
+}
+fieldset{
+    margin: 50px 0;
+    color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+
+}
+fieldset a{
+    color: #b6bdc0;
+    text-decoration: none;
+
+}
+fieldset a:hover{
+    color: #9aa2a5;
+}
+input{
+    font-size: 12px;
+    margin: 10px 0;
+    padding: 7px;
+    border-radius: 12px;
+    border: 2px solid #ffffff;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #ffffff;
+}
+input:focus{
+    outline: none;
+    border: 2px solid #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+::placeholder{
+    color: rgba(239, 239, 239, 0.7);
+}
+button{
+    margin: 10px 0;
+    padding: 7px;
+    border-radius: 12px;
+    border: 2px solid #ffffff;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #ffffff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+form{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+input[type="checkbox"]{
+    width: 16px;
+    height: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.social-login{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+
+}
+.social-login button{
+    width: 50px;
+    transform: scale(1.4);
+}
+.bemvindo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.bemvindo h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.bemvindo p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+legend{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+label{
+    align-self: center;
+    margin: auto;
+    font-size: 14px;
+    
+}
+
+.btn-submit{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+form h4{
+    font-weight: 550;
+    font-size: 16px;
+}
+
+.mensagem_erro{
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 10;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    animation: erro 1s ease-out;
+    animation-duration: 0.5s;
+    opacity: 1;
+}
+
+@keyframes erro{
+    0%{
+    opacity: 0;}
+    100%{
+    opacity: 1;}
+}
+
+#voltar{
+    top: 15px;
+    left: 15px;
+    position: absolute;
+    color: #000;
+}
+
+#voltar:hover{
+    color: #656565;
+    transition: all 0.3s;
+}
+
+#emoji{
+    margin-top: 50px;
+    color: #656565;
+}
+
+#erro{
+    color: #000;
+}
+
+span{
+    font-size: 15px;
+}

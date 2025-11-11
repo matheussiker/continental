@@ -1,0 +1,59 @@
+/* Seu CSS aqui (mantive o original) */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+        .voltar{
+            color: black;
+            position: absolute;
+            top: 15px;
+            left: 20px;
+        }
+        .topo {
+            text-align: center;
+            padding: 20px;
+        }
+        .galeria {
+            column-count: 4;
+            column-gap: 15px;
+            padding: 20px;
+        }
+        .galeria img {
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            display: block;
+            break-inside: avoid;
+        }
+        @media (max-width: 1024px) {
+            .galeria {
+                column-count: 3;
+            }
+        }
+        @media (max-width: 768px) {
+            .galeria {
+                column-count: 2;
+            }
+        }
+        @media (max-width: 480px) {
+            .galeria {
+                column-count: 1;
+            }
+        }
+        /* botão apagar */
+        .btn-apagar {
+            margin: 20px auto;
+            display: block;
+            padding: 10px 15px;
+            background-color: #c91f0c;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .btn-apagar:hover {
+            background-color: #c0392b;
+        }

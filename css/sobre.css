@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background-color: #000000;
+    background: url(../images/sobrebg.png) no-repeat left;
+    background-size:cover;
+    color: #ffffff;
+}
+main h1{
+    font-size: 52px;
+}
+
+section{
+    color: #ffffff;
+    min-height: 30vh;
+    background-color: #172652;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sobre{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+button{
+    margin: 5px;
+    background-color: #ffffff;
+    color: #172652;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.ico{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.ico button{
+    background-color: #00000000;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 33px;
+    transition: all 0.3s ease-out;
+
+}
+.ico button:hover{
+    color: #ffffff;
+}

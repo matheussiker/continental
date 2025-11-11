@@ -1,0 +1,27 @@
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nome-autor {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.nome-autor:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+.foto-perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.memorias{
+    display: flex;
+}

@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 15px;
+    background: #fafafa;
+    height: 100vh;
+    display: flex;
+}
+
+/* ==== SIDEBAR ==== */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    width: 250px;
+    height: 100vh;
+    background-color: #2C3444;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.sidebar h1 {
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.sidebar li {
+    width: 100%;
+    padding: 15px 20px;
+    list-style: none;
+    text-align: left;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 16px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.sidebar li:hover {
+    background-color: #3E4A5E;
+}
+
+/* ==== CONTEÚDO PRINCIPAL ==== */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    overflow-y: auto;
+}
+
+/* ==== GRID ESTILO PINTEREST ==== */
+.grid {
+    column-count: 4;       /* número de colunas */
+    column-gap: 20px;      /* espaço horizontal entre as colunas */
+    padding: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .grid {
+        column-count: 3;
+    }
+}
+@media (max-width: 800px) {
+    .grid {
+        column-count: 2;
+    }
+}
+@media (max-width: 480px) {
+    .grid {
+        column-count: 1;
+    }
+}
+
+/* Cada imagem individual */
+.grid-item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px; /* espaço vertical entre as imagens */
+
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease-in-out;
+    break-inside: avoid; /* impede que as imagens quebrem entre colunas */
+}
+
+/* Efeito hover */
+.grid-item:hover {
+    transform: scale(1.03);
+}
+
+/* As imagens */
+.grid-item img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}

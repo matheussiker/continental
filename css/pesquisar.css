@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #d3cfcf;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #FFFFFF;
+    width: 250px;
+    height: 100vh;
+    background-color: #2C3444;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+.sidebar h1{
+    font-weight: 500;
+    color: white
+}
+.sidebar li{
+    width: 100%;;
+    padding: 15px 20px;
+    list-style: none;
+    text-align: left;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 16px;
+}
+.sidebar a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.sidebar li:hover{
+    background-color: #3E4A5E;
+    background-size: 0 2px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, #000000, #000000);
+}
+
+.pesquisa-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.form-pesquisa {
+    display: inline-flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.form-pesquisa input {
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    width: 250px;
+    font-size: 16px;
+}
+
+.form-pesquisa button {
+    background-color: #2C3444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-pesquisa button:hover {
+    background-color: #3E4A5E;
+}
+
+/* Resultados da pesquisa */
+.resultado-pesquisa {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-user {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 60%;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+.card-user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.card-user .nome-autor {
+    color: #2C3444;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.card-user .nome-autor:hover {
+    color: #3E4A5E;
+}
